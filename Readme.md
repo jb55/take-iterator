@@ -41,6 +41,12 @@ for (let n of takeThree()) {
 
 ```
 
+## API
+
+### map(GeneratorFunction, Function)
+
+returns: GeneratorFunction
+
 ## License
 
   The MIT License (MIT)
