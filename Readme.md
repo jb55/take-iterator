@@ -1,7 +1,9 @@
 
 # lazy-take-generator
 
-  Lazily take from a generator function
+  Lazily take `n` values from a generator function
+
+  [Other useful functions](https://github.com/jb55/lazy-generator)
 
   [![Build Status](https://travis-ci.org/jb55/lazy-take-generator.png)](https://travis-ci.org/jb55/lazy-take-generator)
 
