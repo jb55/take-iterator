@@ -1,11 +1,11 @@
 'use strict';
 
-let map = require('lazy-map-generator');
+let map = require('map-generator');
 let nats = require('naturals');
 let expect = require('expect.js');
 let take = require('./');
 
-describe('lazy-take-generator', function(){
+describe('take-generator', function(){
   it('works on multiple invocations', function(){
     let doubled = map(nats, function(x) { return x * 2; });
     let fiveDoubledNats = take(doubled, 5);

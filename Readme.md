@@ -1,17 +1,17 @@
 
-# lazy-take-generator
+# take-generator
 
-  Lazily take `n` values from a generator function
+  Take `n` values from a generator function
 
-  [Other useful functions](https://github.com/jb55/lazy-generator)
+  [Other useful functions](https://github.com/jb55/generators)
 
-  [![Build Status](https://travis-ci.org/jb55/lazy-take-generator.png)](https://travis-ci.org/jb55/lazy-take-generator)
+  [![Build Status](https://travis-ci.org/jb55/take-generator.png)](https://travis-ci.org/jb55/take-generator)
 
 ## Installation
 
   Install with npm
 
-    $ npm install lazy-take-generator
+    $ npm install take-generator
 
 ## Example
 
@@ -19,7 +19,7 @@
 'use strict';
 
 let nats = require('naturals');
-let take = require('lazy-take-generator');
+let take = require('take-generator');
 
 let takeThree = take(nats, 3);
 
