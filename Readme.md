@@ -43,9 +43,11 @@ for (let n of takeThree()) {
 
 ## API
 
-### map(GeneratorFunction, Function)
+### take(GeneratorFunction, count)
 
-returns: GeneratorFunction
+* `count`: number of yielded values to yield
+
+returns: `GeneratorFunction`
 
 ## License
 
