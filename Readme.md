@@ -3,6 +3,8 @@
 
   Lazily take from a generator function
 
+  [![Build Status](https://travis-ci.org/jb55/lazy-take-generator.png)](https://travis-ci.org/jb55/lazy-take-generator)
+
 ## Installation
 
   Install with npm
@@ -19,11 +21,11 @@ let take = require('lazy-take-generator');
 
 let takeThree = take(nats, 3);
 
-for (let n of takeFive()) {
+for (let n of takeThree()) {
   console.log(n);
 }
 
-for (let n of takeFive()) {
+for (let n of takeThree()) {
   console.log(n);
 }
 
