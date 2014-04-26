@@ -23,9 +23,17 @@ let take = require('take-generator');
 
 let takeThree = take(nats, 3);
 
-for (let n of take(nats, 3)) {
+for (let n of takeThree()) {
   console.log(n);
 }
+
+for (let n of takeThree()) {
+  console.log(n);
+}
+
+// 0
+// 1
+// 2
 
 // 0
 // 1
@@ -39,7 +47,7 @@ for (let n of take(nats, 3)) {
 
 * `count`: number of yielded values to yield
 
-returns: `Generator`
+returns: `GeneratorFunction`
 
 ## License
 
