@@ -1,17 +1,17 @@
 
-# take-generator
+# take-iterator
 
-  Take `n` values from a generator
+  Take `n` values from an iterator
 
   [Other useful functions](https://github.com/jb55/generators)
 
-  [![Build Status](https://travis-ci.org/jb55/take-generator.png)](https://travis-ci.org/jb55/take-generator)
+  [![Build Status](https://travis-ci.org/jb55/take-iterator.png)](https://travis-ci.org/jb55/take-iterator)
 
 ## Installation
 
   Install with npm
 
-    $ npm install take-generator
+    $ npm install take-iterator
 
 ## Example
 
@@ -19,9 +19,9 @@
 'use strict';
 
 let nats = require('naturals');
-let take = require('take-generator');
+let take = require('take-iterator');
 
-for (let n of take(nats, 3)) {
+for (let n of take(nats(), 3)) {
   console.log(n);
 }
 
@@ -33,11 +33,11 @@ for (let n of take(nats, 3)) {
 
 ## API
 
-### take(Generator or GeneratorFunction, count)
+### take([Iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/The_Iterator_protocol), count)
 
-* `count`: number of yielded values to yield
+* `count`: number of values to iterator over
 
-returns: `Generator`
+returns: [Iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/The_Iterator_protocol)
 
 ## License
 

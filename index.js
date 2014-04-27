@@ -1,13 +1,10 @@
 'use strict';
 
-let isGen = require('is-generator');
+module.exports = takeIterator;
 
-module.exports = takeGenerator;
-
-function* takeGenerator(gen, n) {
+function* takeIterator(xs, n) {
   let i = 0;
-  gen = isGen.fn(gen)? gen() : gen;
-  for (let x of gen) {
+  for (let x of xs) {
     yield x;
     if (++i === n) break;
   }

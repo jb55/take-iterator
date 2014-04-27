@@ -1,6 +1,6 @@
 'use strict';
 
-let map = require('map-generator');
+let map = require('map-iterator');
 let nats = require('naturals');
 let expect = require('expect.js');
 let take = require('./');
@@ -8,7 +8,7 @@ let take = require('./');
 describe('take-generator', function(){
   it('works on multiple invocations', function(){
     function fiveDoubledNats() {
-      let doubled = map(nats, function(x) { return x * 2; })
+      let doubled = map(nats(), function(x) { return x * 2; })
       return take(doubled, 5);
     }
     let run = fiveDoubledNats();

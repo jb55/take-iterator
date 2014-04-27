@@ -1,26 +1,23 @@
 {
-  "name": "take-generator",
-  "description": "Take n values from a javascript generator",
+  "name": "take-iterator",
+  "description": "Take n values from a javascript iterator",
   "keywords": [
     "take",
-    "lazy",
-    "generator"
+    "generator",
+    "iterator"
   ],
-  "version": "4.0.0",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jb55/take-generator.git"
+    "url": "git://github.com/jb55/take-iterator.git"
   },
   "main": "index.js",
   "scripts": {
     "test": "mocha --harmony --reporter spec"
   },
-  "dependencies": {
-    "is-generator": "0.0.3"
-  },
   "devDependencies": {
     "expect.js": "*",
-    "map-generator": "*",
+    "map-iterator": "*",
     "mocha": "*",
     "naturals": "^1.0.0"
   }
