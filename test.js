@@ -27,4 +27,17 @@ describe('take-generator', function(){
     expect(run.next().value).to.be(6);
     expect(run.next().value).to.be(8);
   });
+
+  it('taking 0 returns empty iterator', function(){
+    let empty = take(nats(), 0)
+
+    expect(empty.next().done).to.be(true);
+  });
+
+  it('taking 1 returns one', function(){
+    let empty = take(nats(), 1)
+
+    expect(empty.next().value).to.be(0);
+    expect(empty.next().done).to.be(true);
+  });
 });
